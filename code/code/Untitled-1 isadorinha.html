@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rosa</title>
+</head>
+<body><center><p>site da isadora</p></center>
+    <center><button onclick=" botão()" >cique no botão</button> 
+    <br><br>
+    <button onclick= "calculaidade()" >Quantos anos eu terei no final de 2022?</button>
+</body>
+       
+</body>
+</html>
+<script>
+function botão(){
+        alert("Parabéns,voce entrou no mundo Dora")
+        var a = Number (prompt ("Digite o A'"))
+        var b = Number(prompt ("Digite o B'"))
+        var c = Number(prompt ("Digite o C'"))
+        var delta = b*b - 4*a*c;
+        var x1 = (-b + Math.sqrt(delta))/2*a
+        var x2 = (-b - Math.sqrt(delta))/2*a
+        var mensagem = "O resultado do x1 é: "+x1+" , o resultado de x2 é: "+x2;
+        alert(mensagem)
+    
+
+}
+function calculaidade(){
+    var anoNasc = Number(prompt("Digite ano que voce nasceu!"));
+    var idade = 2022 - anoNasc;
+    var nsg = "No finsl de 2022 voce tera " + idade + " anos. \n";
+    if (idade < 15) {
+        nsg += "Portanto, é menor de idade!\n";
+
+}
+if (idade % 2 == 0 ) {
+    nsg += "sua idade é par";
+
+}
+else{
+    nsg +="sua idade é impar";
+
+}
+alert(nsg)
+</script>
+

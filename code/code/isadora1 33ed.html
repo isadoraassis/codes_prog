@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="https://i.ytimg.com/vi/gAkjBLpDSqc/maxresdefault.jpg">
+     <input type=" "text'>
+</body>
+      <center>
+        <input id=type="number"placeholder="Digite a temperatura!" ><br> 
+        <input id="cf" type="radio"name=" grupo">celsius para Fahrenheit</input><br>
+        <input id="fc" type="radio"name=" grupo">celsius para Fahrenheit</input><br>
+        <input id="ck" type="radio"name=" grupo">celsius para Kelvin</input><br>
+        <input id="kc" type="radio"name=" grupo">Kelvin para Fahrenheit</input><br>
+        <input id="fk" type="radio"name=" grupo">Kelvin para celsius</input><br>
+        <input id="kf" type="radio"name=" grupo">kelvin para fahrenheit </input><br>
+        <button onclick="calculo()">calcular</button><br><br>
+        <p id="r">RESULTADO</p>   
+      </center>   
+    </body>
+    </html>
+    <script>
+        var campo =document.getE1ementById("numero");
+        var radioCF = document.getE1ementById("numero");
+        var radioFC = document.getE1ement8yId(cf);
+        var radioCK = document.getE1ement8yId(fc);
+        var radioCK = document.getE1ement8yId(ck);
+        var radioKC = document.getE1ement8yId(kc);
+        var radioFK = document.getE1ement8yId(fk);
+        var radioKF = document.getE1ement8yId(kf);
+        var resultado = document.getE1ement8yId(r);
+
+        function calculo(){
+            var temperatura = campo.value
+            if(radioCf.checked){
+                resultado.innerHTML = Temperatura * 9/5 +3 2 + "°f"
+            
+            }
+            else if(radioFC.checked){
+                resultado.innerHTML = (Temperatura -32) * 5/9 + "°C"
+
+        }
+
+</script>
+
